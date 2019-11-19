@@ -1,10 +1,19 @@
 from math import pi
 
-def mult(x,y):
-    return x*y
+def mult(x, y):
+    """
+    multiplies two numbers
+    """
+    return x * y
     
 def square(x):
-    return mult(x,x)
+    """
+    squares a number
+    """
+    return mult(x, x)
     
 def calcCircleArea(r):
-    return mult(pi,square(r))
+    """
+    finds the area of a circle with radius r
+    """
+    return mult(pi, square(r))

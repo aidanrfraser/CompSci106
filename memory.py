@@ -18,6 +18,7 @@ def memory(n, m, alist):
         value1 += 1
         value2 += 1
     return blist
+    
 assertEqual(memory(5, 7, [5, 5, 6, 3, 5, 2, 3, 4, 5]), [5, 7, 7, 7, 5, 7, 7, 4, 5])
 assertEqual(memory(3, 4, []), [])
 assertEqual(memory(3, 4, [3, 5, 6]), [3, 4, 4])

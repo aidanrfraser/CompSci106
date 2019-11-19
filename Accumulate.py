@@ -16,4 +16,3 @@ def accumulate(fcn, alist, init):
         return init
     else:
         return fcn(alist[0], accumulate(fcn, alist[1:], init))
-#tests

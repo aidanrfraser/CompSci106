@@ -1,4 +1,3 @@
-
 decade = 100
 name = input("Hi! What's your name? ")
 print("Hello " + name)
