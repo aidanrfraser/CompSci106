@@ -8,6 +8,7 @@ def greater_than_five(a, b):
         return a
     else:
         return b
+
 def accumulate(fcn, alist, init):
     """
     Uses functions to accummulate a list

@@ -9,6 +9,7 @@ def is_next_to(index, alist):
         return True
     else:
         return False
+        
 assertEqual(is_next_to(1, [1, 2, 3]), False)
 assertEqual(is_next_to(1, [1, 1, 5]), True)
 assertEqual(is_next_to(1, [2, 2, 1]), True)
@@ -69,14 +70,14 @@ range1 = range(100, 1001, 100)
 dependent = []
 for num in range1:
     the_list = plotlist[:num]
-    elapsed = timeit.timeit('count_singlesA(key, the_list)', number=100, globals=globals())
+    elapsed = timeit.timeit('count_singlesA(key, the_list)', number = 100, globals = globals())
     dependent = dependent + [elapsed]
 pyplot.plot(range1, dependent, 'r', label = 'For Loop (A)')
 
 dependent = []
 for num in range1:
     the_list = plotlist[:num]
-    elapsed = timeit.timeit('count_singlesB(key, the_list)', number=100, globals=globals())
+    elapsed = timeit.timeit('count_singlesB(key, the_list)', number = 100, globals = globals())
     dependent = dependent + [elapsed]
 pyplot.plot(range1, dependent, 'b', label = 'State Variable (B)')
 

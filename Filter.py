@@ -17,4 +17,3 @@ def filter(fcn, alist):
         return alist
     else:
         return fcn(alist[0]) + filter(fcn, alist[1:])
-#tests

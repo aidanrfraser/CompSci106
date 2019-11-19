@@ -9,6 +9,7 @@ def is_next_to(index, alist):
         return True
     else:
         return False
+        
 assertEqual(is_next_to(1, [1, 2, 3]), False)
 assertEqual(is_next_to(1, [1, 1, 5]), True)
 assertEqual(is_next_to(1, [2, 2, 1]), True)
@@ -23,6 +24,7 @@ def count_singles(key, alist):
             if not is_next_to(x, alist):
                 result += 1
     return result
+    
 assertEqual(count_singles(1, [1]), 1)
 assertEqual(count_singles(2, []), 0)
 assertEqual(count_singles(1, [1, 1]), 0)

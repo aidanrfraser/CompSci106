@@ -11,6 +11,7 @@ def find(world):
         return 0
     else:
         return 1 + find(world[1:])
+        
 def lookright(world):
     """
     Looks right for food
@@ -22,6 +23,7 @@ def lookright(world):
             return True
         else:
             return lookright(world[1:])
+            
 def lookleft(world):
     """
     Looks left for food
@@ -35,6 +37,7 @@ def lookleft(world):
             return True
         else:
             return lookleft(world[1:])
+            
 def replace(want, replacer, world):
     """
     Replaces a number in a string
@@ -46,16 +49,19 @@ def replace(want, replacer, world):
             return replacer + world[1:]
         else:
             return world[0:1] + replace(want, replacer, world[1:])
+            
 def moveleft(world):
     """
     Moves chomper left
     """
     return world[0:(find(world) - 2)] + '> 0' + world[(find(world) + 1):]
+    
 def moveright(world):
     """
     Moves chomper right
     """
     return world[0:find(world)] + '0 <' + world[(find(world) + 3):]
+    
 def chomperhelper(world, state):
     """
     Helps chomper move around
@@ -76,6 +82,7 @@ def chomperhelper(world, state):
         else:
             world = replace('<', 'V', world)
             chomper(world)
+            
 def chomper(world):
     """
     base function for chomper
@@ -87,6 +94,7 @@ def chomper(world):
         return chomperhelper(replace('V', '<', world), '<')
     else:
         print('Done!')
+        
 #tests
 assertEqual(replace('V','>','V'), '>')
 assertEqual(replace('V','>','V 0 0'), '> 0 0')

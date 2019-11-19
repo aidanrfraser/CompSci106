@@ -1,7 +1,7 @@
 from cisc106 import assertEqual
 def insertionSort(alist):
     """
-    Insertion sorts
+    Insertion sorts via barrier
     """
     for barrier in range(1, len(alist)):
         num = alist[barrier]

@@ -7,6 +7,7 @@ def contains(key, alist):
         if x == key:
             return True
     return False
+    
 assertEqual(contains(1, [1, 1, 2, 3, 4, 5, 1]), True)
 assertEqual(contains('d', ['a', 'b', 'c']), False)
 assertEqual(contains(4, []), False)

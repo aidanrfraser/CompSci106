@@ -16,6 +16,9 @@ assertEqual(insert_in_order(1, [1, 2, 3]), [1, 1, 2, 3])
 assertEqual(insert_in_order(1, []), [1])
             
 def insertionSort(alist):
+    """
+    Sorts alist via instertion
+    """
     if not alist:
         return alist
     else:

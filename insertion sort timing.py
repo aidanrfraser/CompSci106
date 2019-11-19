@@ -20,6 +20,9 @@ assertEqual(insert_in_order(1, [1, 2, 3]), [1, 1, 2, 3])
 assertEqual(insert_in_order(1, []), [1])
             
 def insertionSort6(alist):
+    """
+    Sorts alist via insertion
+    """
     if not alist:
         return alist
     else:
@@ -54,14 +57,14 @@ range1 = range(100, 501, 50)
 dependent = []
 for num in range1:
     the_list = plotlist[:num]
-    elapsed = timeit.timeit('insertionSort7(the_list)', number=100, globals=globals())
+    elapsed = timeit.timeit('insertionSort7(the_list)', number = 100, globals = globals())
     dependent = dependent + [elapsed]
 pyplot.plot(range1, dependent, 'r', label = 'Constant Space (7)')
 
 dependent = []
 for num in range1:
     the_list = plotlist[:num]
-    elapsed = timeit.timeit('insertionSort6(the_list)', number=100, globals=globals())
+    elapsed = timeit.timeit('insertionSort6(the_list)', number = 100, globals = globals())
     dependent = dependent + [elapsed]
 pyplot.plot(range1, dependent, 'g', label = 'Number by Number (6)')
 

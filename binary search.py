@@ -1,7 +1,10 @@
 def binsearch(alist, key, start, end):
-    mid = len(alist)//2
+    """
+    Finds a key in alist
+    """
+    mid = len(alist) // 2
     if start > end:
-        return none
+        return None
     elif start < end:
         return binsearch(alist, key, start, mid-1)
     else:
