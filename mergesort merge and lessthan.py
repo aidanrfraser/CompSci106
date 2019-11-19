@@ -60,7 +60,7 @@ range1 = range(100, 1001, 100)
 dependent = []
 for num in range1:
     the_list = plotlist[:num]
-    elapsed = timeit.timeit('mergeSort(the_list)', number=100, globals=globals())
+    elapsed = timeit.timeit('mergeSort(the_list)', number = 100, globals = globals())
     dependent = dependent + [elapsed]
 pyplot.plot(range1, dependent, 'r', label = 'For Loop (A)')
 

@@ -5,6 +5,7 @@ def check4():
     fourcheck = int(num)
     if (fourcheck % 4) is 0:
         print("It's also a multiple of four!")
+        
 def main():
     """
     Main logic sector of the function, will determine if a number is even or odd

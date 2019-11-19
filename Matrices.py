@@ -12,6 +12,9 @@
 #       swap row and column
 
 def transpose(matrixA):
+    """
+    Transposes a matrix
+    """
     for row in range(len(matrixA[0])):
         for column in range(len(matrixA)):
-            
+            pass #put something here

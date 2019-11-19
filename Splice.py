@@ -8,6 +8,7 @@ def lt(a, b):
         return True
     else:
         return False
+        
 def splice(asorted, bsorted):
     """
     Combines 2 lists while also sorting them
@@ -17,8 +18,7 @@ def splice(asorted, bsorted):
     elif not bsorted:
         return asorted
     else:
-        if lt(asorted, bosrted) == True:
+        if lt(asorted, bsorted) == True:
             return [asorted[0]] + splice(asorted[1:], bsorted)
         else:
             return [bsorted[0]] + splice(asorted, bsorted[1:])
-#tests

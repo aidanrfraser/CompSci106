@@ -5,11 +5,13 @@ def worker(num):
     Multiplies a single parameter by 2
     """
     return num * 2
+    
 def manager(fcn, number):
     """
     Runs a function on a parameter
     """
     return fcn(number)
+    
 #tests
 assertEqual(worker(4), 8)
 assertEqual(worker(0), 0)

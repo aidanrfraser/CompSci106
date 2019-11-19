@@ -8,6 +8,7 @@ def min(a, b):
         return a
     else:
         return b
+        
 def accumulate(fcn, alist, init):
     """
     Uses functions to accummulate a list
@@ -16,4 +17,3 @@ def accumulate(fcn, alist, init):
         return init
     else:
         return fcn(alist[0], accumulate(fcn, alist[1:], init))
-#tests

@@ -15,6 +15,6 @@ def sumNoDups(num1, num2, num3):
     else:
         return num1 + num2 + num3
         
-assertEqual(sumNoDups(3,3,3),0)
-assertEqual(sumNoDups(3,4,3),4)
-assertEqual(sumNoDups(0,0,1),1)
+assertEqual(sumNoDups(3, 3, 3), 0)
+assertEqual(sumNoDups(3, 4, 3), 4)
+assertEqual(sumNoDups(0, 0, 1), 1)

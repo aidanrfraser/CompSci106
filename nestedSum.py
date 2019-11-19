@@ -10,6 +10,7 @@ def nested_sum(alist):
         return alist
     else:
         return nested_sum(alist[0]) + nested_sum(alist[1:])
-assertEqual(nested_sum([1,2,3,[4,5,6]]), 21)
-assertEqual(nested_sum([1,2,3,[0]]), 6)
-assertEqual(nested_sum([0,[0,1,2]]), 3)
+        
+assertEqual(nested_sum([1, 2, 3, [4, 5, 6]]), 21)
+assertEqual(nested_sum([1, 2, 3, [0]]), 6)
+assertEqual(nested_sum([0, [0, 1, 2]]), 3)

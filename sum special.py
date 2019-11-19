@@ -14,9 +14,8 @@ def sumSpecials(num1, num2, num3, num4):
             element = 0
         else:
             final = (final + element)
-        
     return final
     
-assertEqual(sumSpecials(1,9,12,25), 10)
-assertEqual(sumSpecials(3,5,7,9), 24)
-assertEqual(sumSpecials(14,10,25,29), 0)
+assertEqual(sumSpecials(1, 9, 12, 25), 10)
+assertEqual(sumSpecials(3, 5, 7, 9), 24)
+assertEqual(sumSpecials(14, 10, 25, 29), 0)
